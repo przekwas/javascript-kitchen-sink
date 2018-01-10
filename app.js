@@ -9,6 +9,15 @@ if (myName.charCodeAt(0) > 76) {
     alert("Back of the line!");
 } else {
     alert("Next!");
-}
+};
+
+//function to alert Hello World!
+function sayHello() {
+    alert("Hello World!");
+};
+
+sayHello();
+
+
 
 

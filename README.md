@@ -9,6 +9,7 @@ Compute the result of adding 5 and 4 and store it in an appropriately named vari
 Write some code so that if your name starts with a letter after L, you display an alert that says "Back of the line!". Otherwise, you should display an alert that says "Next!". (Hint: Check out ASCII codes and the charCodeAt() function built into strings in JavaScript)
 
 Add comments to your code to document its functionality
+
 Write a function called sayHello that displays an alert that says Hello World!
 
 Call the sayHello function.
