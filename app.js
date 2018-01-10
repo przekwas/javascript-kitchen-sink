@@ -65,5 +65,30 @@ for (let i = 0; i < personArray.length; i++) {
     ageCheck(personArray[i].name, personArray[i].age);
 };
 
+//function to take any word and return # of characters
+function getLength(text) {
+    let lettersTotal = 0;
+    let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXRYZ"
+    let splitAlphabet = alphabet.split("");
+    for (let i = 0; i < text.length; i++) {
+        if(splitAlphabet.indexOf(text[i]) > -1) {
+            lettersTotal = lettersTotal + 1;
+        }
+    }
+    return lettersTotal;
+};
+
+let previousObj = getLength("Hello Workd!");
+
+console.log(previousObj);
+
+//checks if the # of characters from the previous objective is odd/even
+if (previousObj % 2 === 0) {
+    console.log("The world is nice and even!");
+} else {
+    console.log("The world is an odd place!");
+}
+
+
 
 
