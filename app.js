@@ -65,8 +65,28 @@ for (let i = 0; i < personArray.length; i++) {
     ageCheck(personArray[i].name, personArray[i].age);
 };
 
-//function to take any word and return # of characters
-function getLength(text) {
+//function to take any string and return # of CHARACTERS
+function getCharacters(text) {
+    let charactersTotal = 0;
+    for (let i = 0; i < text.length; i++) {
+        charactersTotal++;
+    }
+    return charactersTotal;
+}
+
+let previousObjective = getCharacters("Hello World");
+
+console.log("Total number of characters: " + previousObjective);
+
+//checks if the # of characters from the previous objective is odd/even
+if (previousObjective % 2 === 0) {
+    console.log("The world is nice and even!");
+} else {
+    console.log("The world is an odd place!");
+}
+
+//function to take any string and return # of LETTERS
+function getLetters(text) {
     let lettersTotal = 0;
     let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXRYZ"
     let splitAlphabet = alphabet.split("");
@@ -78,11 +98,11 @@ function getLength(text) {
     return lettersTotal;
 };
 
-let previousObj = getLength("Hello Workd!");
+let previousObj = getLetters("Hello World");
 
-console.log(previousObj);
+console.log("Total number of letters: " + previousObj);
 
-//checks if the # of characters from the previous objective is odd/even
+//checks if the # of LETTERS from the previous objective is odd/even
 if (previousObj % 2 === 0) {
     console.log("The world is nice and even!");
 } else {
