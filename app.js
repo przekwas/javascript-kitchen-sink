@@ -30,6 +30,40 @@ ageCheck("Abby", 27);
 ageCheck("James", 18);
 ageCheck("John", 17);
 
+let favVeggies = ["Mushrooms", "Broccoli", "Squash", "Carrots", "Celery"];
+
+//for loop to display favVeggies array to console
+for (let i = 0; i < favVeggies.length; i++) {
+    console.log(favVeggies[i]);
+};
+
+let personArray = [
+    {
+        name: "Luke",
+        age: 30
+    },
+    {
+        name: "Audrey",
+        age: 26
+    },
+    {
+        name: "Yzerman",
+        age: 14
+    },
+    {
+        name: "Apollo",
+        age: 4
+    },
+    {
+        name: "Chris",
+        age: 28
+    }
+];
+
+//loop to call ageCheck function for each name/age in the array
+for (let i = 0; i < personArray.length; i++) {
+    ageCheck(personArray[i].name, personArray[i].age);
+};
 
 
 
