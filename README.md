@@ -17,6 +17,7 @@ Call the sayHello function.
 Write a function called checkAge that takes two arguments: one for a name and one for an age. If the age is less than 21, display an alert that says "Sorry [name], you aren't old enough to view this page!"
 
 Call the checkAge function 4 times with the following people: Charles who is 21, Abby who is 27, James who is 18, and John who is 17.
+
 Create an array of your favorite vegetables and name it accordingly.
 
 Use a loop to display each of your favorite vegetables to the developer console.

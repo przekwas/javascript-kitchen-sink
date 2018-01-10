@@ -18,6 +18,18 @@ function sayHello() {
 
 sayHello();
 
+//function to take name and age and check if age is < 21
+function ageCheck (name, age) {
+    if (age < 21) {
+        alert("Sorry " + name + ", you aren't old enough to view this page!");
+    }
+};
+
+ageCheck("Charles", 21);
+ageCheck("Abby", 27);
+ageCheck("James", 18);
+ageCheck("John", 17);
+
 
 
 
