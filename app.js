@@ -92,7 +92,7 @@ function getLetters(text) {
     let splitAlphabet = alphabet.split("");
     for (let i = 0; i < text.length; i++) {
         if(splitAlphabet.indexOf(text[i]) > -1) {
-            lettersTotal = lettersTotal + 1;
+            lettersTotal++;
         }
     }
     return lettersTotal;
@@ -108,7 +108,3 @@ if (previousObj % 2 === 0) {
 } else {
     console.log("The world is an odd place!");
 }
-
-
-
-
